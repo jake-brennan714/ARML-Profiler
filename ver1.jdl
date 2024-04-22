@@ -1,0 +1,55 @@
+application {
+    config {
+        baseName majProf
+        applicationType monolith
+        packageName net.jakebrennan
+    }
+    entities *
+}
+
+enum ArmlLeague {
+    A1,
+    A2,
+    B1,
+    B2,
+    B3,
+    C1
+}
+
+entity ArmlPlayer(players) {
+    playerID Long required unique,
+    firstName String required,
+    lastName String required,
+    tenhouName String maxlength(8) pattern(/\S+/),
+    league ArmlLeague required
+}
+
+entity ArmlGame(games) {
+    gameID Long unique required,
+}
+
+entity ArmlProfile(profiles) {
+    winRate Double min(0.0) max(100.0),
+    feedRate Double min(0.0) max(100.0),
+    callRate Double min(0.0) max(100.0),
+    riiRate Double min(0.0) max(100.0),
+    feedEV Long
+}
+
+entity ArmlGameScore(scores) {
+    score Long required
+}
+
+relationship OneToOne {
+    ArmlProfile to User with builtInEntity,
+    ArmlProfile{playerID} to ArmlPlayer
+}
+
+relationship ManyToMany {
+    ArmlPlayer{Games} to ArmlGame{Players}
+}
+
+relationship OneToMany {
+    ArmlGame to ArmlGameScore
+    ArmlPlayer to ArmlGameScore
+}
