@@ -13,6 +13,8 @@
 # http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
 # ===================================================================
 
+spring.config.name: application, auth-prod
+
 logging:
   level:
     ROOT: INFO
