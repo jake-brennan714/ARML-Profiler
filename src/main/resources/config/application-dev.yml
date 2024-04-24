@@ -32,8 +32,8 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:h2:file:./target/h2db/db/majProfArml;DB_CLOSE_DELAY=-1;MODE=MYSQL
-    username: majProfArml
+    url: jdbc:h2:file:./target/h2db/db/majProf;DB_CLOSE_DELAY=-1;MODE=MYSQL
+    username: majProf
     password:
     hikari:
       poolName: Hikari

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <!--
+        Added the constraints for entity ArmlPlayer.
+    -->
+    <changeSet id="20240422230255-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="players_id"
+                                 baseTableName="rel_players__games"
+                                 constraintName="fk_rel_players__games__players_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="players"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="games_id"
+                                 baseTableName="rel_players__games"
+                                 constraintName="fk_rel_players__games__games_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="games"
+                                 />
+    </changeSet>
+</databaseChangeLog>

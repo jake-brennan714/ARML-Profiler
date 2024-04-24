@@ -50,6 +50,14 @@ public class CacheConfiguration {
             createCache(cm, net.jakebrennan.domain.User.class.getName());
             createCache(cm, net.jakebrennan.domain.Authority.class.getName());
             createCache(cm, net.jakebrennan.domain.User.class.getName() + ".authorities");
+            createCache(cm, net.jakebrennan.domain.ArmlPlayer.class.getName());
+            createCache(cm, net.jakebrennan.domain.ArmlPlayer.class.getName() + ".armlGameScores");
+            createCache(cm, net.jakebrennan.domain.ArmlPlayer.class.getName() + ".games");
+            createCache(cm, net.jakebrennan.domain.ArmlGame.class.getName());
+            createCache(cm, net.jakebrennan.domain.ArmlGame.class.getName() + ".armlGameScores");
+            createCache(cm, net.jakebrennan.domain.ArmlGame.class.getName() + ".players");
+            createCache(cm, net.jakebrennan.domain.ArmlProfile.class.getName());
+            createCache(cm, net.jakebrennan.domain.ArmlGameScore.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

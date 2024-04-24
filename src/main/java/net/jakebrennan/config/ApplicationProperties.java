@@ -3,7 +3,7 @@ package net.jakebrennan.config;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
- * Properties specific to Maj Prof Arml.
+ * Properties specific to Maj Prof.
  * <p>
  * Properties are configured in the {@code application.yml} file.
  * See {@link tech.jhipster.config.JHipsterProperties} for a good example.

@@ -15,7 +15,7 @@
 
 spring:
   application:
-    name: majProfArml
+    name: majProf
   # Replace by 'prod, faker' to add the faker context and have sample data loaded in production
   liquibase:
     contexts: test
@@ -30,13 +30,13 @@ spring:
     basename: i18n/messages
   task:
     execution:
-      thread-name-prefix: maj-prof-arml-task-
+      thread-name-prefix: maj-prof-task-
       pool:
         core-size: 1
         max-size: 50
         queue-capacity: 10000
     scheduling:
-      thread-name-prefix: maj-prof-arml-scheduling-
+      thread-name-prefix: maj-prof-scheduling-
       pool:
         size: 20
   thymeleaf:
@@ -53,9 +53,9 @@ server:
 # ===================================================================
 jhipster:
   clientApp:
-    name: 'majProfArmlApp'
+    name: 'majProfApp'
   mail:
-    from: majProfArml@localhost.com
+    from: majProf@localhost.com
     base-url: http://127.0.0.1:8080
   logging:
     # To test json console appender

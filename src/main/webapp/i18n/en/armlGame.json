@@ -1,0 +1,26 @@
+{
+  "majProfApp": {
+    "armlGame": {
+      "home": {
+        "title": "Arml Games",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Arml Game",
+        "createOrEditLabel": "Create or edit a Arml Game",
+        "notFound": "No Arml Games found"
+      },
+      "created": "A new Arml Game is created with identifier {{ param }}",
+      "updated": "A Arml Game is updated with identifier {{ param }}",
+      "deleted": "A Arml Game is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Arml Game {{ id }}?"
+      },
+      "detail": {
+        "title": "Arml Game"
+      },
+      "id": "ID",
+      "gameID": "Game ID",
+      "armlGameScore": "Arml Game Score",
+      "players": "Players"
+    }
+  }
+}

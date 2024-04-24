@@ -1,8 +1,8 @@
 {
-  "name": "maj-prof-arml",
+  "name": "maj-prof",
   "version": "0.0.1-SNAPSHOT",
   "private": true,
-  "description": "Description for Maj Prof Arml",
+  "description": "Description for Maj Prof",
   "license": "UNLICENSED",
   "scripts": {
     "app:start": "./mvnw",

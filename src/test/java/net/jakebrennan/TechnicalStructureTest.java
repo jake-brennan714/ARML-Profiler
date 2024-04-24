@@ -9,7 +9,7 @@ import com.tngtech.archunit.junit.AnalyzeClasses;
 import com.tngtech.archunit.junit.ArchTest;
 import com.tngtech.archunit.lang.ArchRule;
 
-@AnalyzeClasses(packagesOf = MajProfArmlApp.class, importOptions = DoNotIncludeTests.class)
+@AnalyzeClasses(packagesOf = MajProfApp.class, importOptions = DoNotIncludeTests.class)
 class TechnicalStructureTest {
 
     // prettier-ignore
@@ -30,7 +30,7 @@ class TechnicalStructureTest {
         .whereLayer("Persistence").mayOnlyBeAccessedByLayers("Service", "Security", "Web", "Config")
         .whereLayer("Domain").mayOnlyBeAccessedByLayers("Persistence", "Service", "Security", "Web", "Config")
 
-        .ignoreDependency(belongToAnyOf(MajProfArmlApp.class), alwaysTrue())
+        .ignoreDependency(belongToAnyOf(MajProfApp.class), alwaysTrue())
         .ignoreDependency(alwaysTrue(), belongToAnyOf(
             net.jakebrennan.config.Constants.class,
             net.jakebrennan.config.ApplicationProperties.class

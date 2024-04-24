@@ -1,0 +1,59 @@
+{
+  "annotations": {
+    "changelogDate": "20240422230257"
+  },
+  "applications": ["majProf"],
+  "entityTableName": "profiles",
+  "fields": [
+    {
+      "fieldName": "winRate",
+      "fieldType": "Double",
+      "fieldValidateRules": ["min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "0.0"
+    },
+    {
+      "fieldName": "feedRate",
+      "fieldType": "Double",
+      "fieldValidateRules": ["min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "0.0"
+    },
+    {
+      "fieldName": "callRate",
+      "fieldType": "Double",
+      "fieldValidateRules": ["min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "0.0"
+    },
+    {
+      "fieldName": "riiRate",
+      "fieldType": "Double",
+      "fieldValidateRules": ["min", "max"],
+      "fieldValidateRulesMax": "100.0",
+      "fieldValidateRulesMin": "0.0"
+    },
+    {
+      "fieldName": "feedEV",
+      "fieldType": "Long"
+    }
+  ],
+  "name": "ArmlProfile",
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "armlProfile",
+      "relationshipName": "user",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one",
+      "relationshipWithBuiltInEntity": true
+    },
+    {
+      "otherEntityName": "armlPlayer",
+      "relationshipName": "playerID",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

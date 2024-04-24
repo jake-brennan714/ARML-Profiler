@@ -1,0 +1,32 @@
+{
+  "annotations": {
+    "changelogDate": "20240422230256"
+  },
+  "applications": ["majProf"],
+  "entityTableName": "games",
+  "fields": [
+    {
+      "fieldName": "gameID",
+      "fieldType": "Long",
+      "fieldValidateRules": ["unique", "required"]
+    }
+  ],
+  "name": "ArmlGame",
+  "relationships": [
+    {
+      "otherEntityName": "armlGameScore",
+      "otherEntityRelationshipName": "armlGame",
+      "relationshipName": "armlGameScore",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "armlPlayer",
+      "otherEntityRelationshipName": "games",
+      "relationshipName": "players",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

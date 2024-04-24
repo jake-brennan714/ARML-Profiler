@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>net.jakebrennan</groupId>
-    <artifactId>maj-prof-arml</artifactId>
+    <artifactId>maj-prof</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>Maj Prof Arml</name>
-    <description>Description for Maj Prof Arml</description>
+    <name>Maj Prof</name>
+    <description>Description for Maj Prof</description>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -31,7 +31,7 @@
         <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
-        <start-class>net.jakebrennan.MajProfArmlApp</start-class>
+        <start-class>net.jakebrennan.MajProfApp</start-class>
         <argLine>-Djava.security.egd=file:/dev/./urandom -Xmx1G</argLine>
         <m2e.apt.activation>jdt_apt</m2e.apt.activation>
         <run.addResources>false</run.addResources>
@@ -414,7 +414,7 @@
                             </platforms>
                         </from>
                         <to>
-                            <image>majprofarml:latest</image>
+                            <image>majprof:latest</image>
                         </to>
                         <container>
                             <entrypoint>
@@ -840,8 +840,8 @@
                 <profile.test>testdev</profile.test>
                 <liquibase-plugin.hibernate-dialect>org.hibernate.dialect.H2Dialect</liquibase-plugin.hibernate-dialect>
                 <liquibase-plugin.driver>org.h2.Driver</liquibase-plugin.driver>
-                <liquibase-plugin.url>jdbc:h2:file:${project.build.directory}/h2db/db/majProfArml</liquibase-plugin.url>
-                <liquibase-plugin.username>majProfArml</liquibase-plugin.username>
+                <liquibase-plugin.url>jdbc:h2:file:${project.build.directory}/h2db/db/majProf</liquibase-plugin.url>
+                <liquibase-plugin.username>majProf</liquibase-plugin.username>
                 <liquibase-plugin.password/>
             </properties>
             <dependencies>
@@ -967,7 +967,7 @@
                 <profile.test>testprod</profile.test>
                 <liquibase-plugin.hibernate-dialect>org.hibernate.dialect.MySQL8Dialect</liquibase-plugin.hibernate-dialect>
                 <liquibase-plugin.driver>com.mysql.cj.jdbc.Driver</liquibase-plugin.driver>
-                <liquibase-plugin.url>jdbc:mysql://localhost:3306/majProfArml</liquibase-plugin.url>
+                <liquibase-plugin.url>jdbc:mysql://localhost:3306/majProf</liquibase-plugin.url>
                 <liquibase-plugin.username>root</liquibase-plugin.username>
                 <liquibase-plugin.password/>
             </properties>

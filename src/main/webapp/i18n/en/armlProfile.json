@@ -1,0 +1,30 @@
+{
+  "majProfApp": {
+    "armlProfile": {
+      "home": {
+        "title": "Arml Profiles",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Arml Profile",
+        "createOrEditLabel": "Create or edit a Arml Profile",
+        "notFound": "No Arml Profiles found"
+      },
+      "created": "A new Arml Profile is created with identifier {{ param }}",
+      "updated": "A Arml Profile is updated with identifier {{ param }}",
+      "deleted": "A Arml Profile is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Arml Profile {{ id }}?"
+      },
+      "detail": {
+        "title": "Arml Profile"
+      },
+      "id": "ID",
+      "winRate": "Win Rate",
+      "feedRate": "Feed Rate",
+      "callRate": "Call Rate",
+      "riiRate": "Rii Rate",
+      "feedEV": "Feed EV",
+      "user": "User",
+      "playerID": "Player ID"
+    }
+  }
+}

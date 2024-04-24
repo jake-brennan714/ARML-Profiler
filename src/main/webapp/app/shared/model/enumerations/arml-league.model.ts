@@ -1,0 +1,13 @@
+export enum ArmlLeague {
+  A1 = 'A1',
+
+  A2 = 'A2',
+
+  B1 = 'B1',
+
+  B2 = 'B2',
+
+  B3 = 'B3',
+
+  C1 = 'C1',
+}

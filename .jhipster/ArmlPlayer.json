@@ -1,0 +1,55 @@
+{
+  "annotations": {
+    "changelogDate": "20240422230255"
+  },
+  "applications": ["majProf"],
+  "entityTableName": "players",
+  "fields": [
+    {
+      "fieldName": "playerID",
+      "fieldType": "Long",
+      "fieldValidateRules": ["required", "unique"]
+    },
+    {
+      "fieldName": "firstName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "lastName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "tenhouName",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength", "pattern"],
+      "fieldValidateRulesMaxlength": "8",
+      "fieldValidateRulesPattern": "\\S+"
+    },
+    {
+      "fieldName": "league",
+      "fieldType": "ArmlLeague",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "A1,A2,B1,B2,B3,C1"
+    }
+  ],
+  "name": "ArmlPlayer",
+  "relationships": [
+    {
+      "otherEntityName": "armlGameScore",
+      "otherEntityRelationshipName": "armlPlayer",
+      "relationshipName": "armlGameScore",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "armlGame",
+      "otherEntityRelationshipName": "players",
+      "relationshipName": "games",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

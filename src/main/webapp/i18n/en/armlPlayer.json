@@ -1,0 +1,31 @@
+{
+  "majProfApp": {
+    "armlPlayer": {
+      "home": {
+        "title": "Arml Players",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Arml Player",
+        "createOrEditLabel": "Create or edit a Arml Player",
+        "notFound": "No Arml Players found"
+      },
+      "created": "A new Arml Player is created with identifier {{ param }}",
+      "updated": "A Arml Player is updated with identifier {{ param }}",
+      "deleted": "A Arml Player is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Arml Player {{ id }}?"
+      },
+      "detail": {
+        "title": "Arml Player"
+      },
+      "id": "ID",
+      "playerID": "Player ID",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "tenhouName": "Tenhou Name",
+      "league": "League",
+      "armlGameScore": "Arml Game Score",
+      "games": "Games",
+      "armlProfile": "Arml Profile"
+    }
+  }
+}
