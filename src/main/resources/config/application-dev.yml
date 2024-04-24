@@ -13,6 +13,8 @@
 # http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
 # ===================================================================
 
+spring.config.name: application, auth-dev
+
 logging:
   level:
     ROOT: DEBUG
@@ -33,8 +35,6 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:h2:file:./target/h2db/db/majProf;DB_CLOSE_DELAY=-1;MODE=MYSQL
-    username: majProf
-    password:
     hikari:
       poolName: Hikari
       auto-commit: false
