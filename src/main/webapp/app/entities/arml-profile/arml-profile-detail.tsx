@@ -51,7 +51,7 @@ export const ArmlProfileDetail = () => {
           <dd>{armlProfileEntity.callRate}</dd>
           <dt>
             <span id="riiRate">
-              <Translate contentKey="majProfApp.armlProfile.riiRate">Rii Rate</Translate>
+              <Translate contentKey="majProfApp.armlProfile.riiRate">Riichi Rate</Translate>
             </span>
           </dt>
           <dd>{armlProfileEntity.riiRate}</dd>
