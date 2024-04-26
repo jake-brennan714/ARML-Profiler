@@ -1,6 +1,6 @@
 {
   "global": {
-    "title": "MajProf",
+    "title": "ARML Profile System",
     "browsehappy": "You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/?locale=en\">upgrade your browser</a> to improve your experience.",
     "menu": {
       "home": "Home",
@@ -8,10 +8,10 @@
       "entities": {
         "main": "Entities",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)",
-        "armlPlayer": "Arml Player",
-        "armlGame": "Arml Game",
-        "armlProfile": "Arml Profile",
-        "armlGameScore": "Arml Game Score"
+        "armlPlayer": "ARML Player",
+        "armlGame": "ARML Game",
+        "armlProfile": "ARML Profile",
+        "armlGameScore": "ARML Game Score"
       },
       "account": {
         "main": "Account",
